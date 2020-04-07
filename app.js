@@ -6,7 +6,6 @@ app.use(ex.static("public"));
 app.get("/", function (req, res) {
   res.render("index.ejs");
 });
-
-app.listen("3000", function () {
+app.listen(process.env.PORT, process.env.IP, function () {
   console.log("Server is running");
 });
