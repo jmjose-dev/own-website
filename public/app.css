@@ -36,9 +36,7 @@
   padding: 15% 10%;
 }
 .topper {
-  width: 100vw;
-  height: 100vh;
-  padding: 15% 10%;
+  padding: 15%;
 }
 
 .f-questrial {
@@ -84,4 +82,33 @@
 }
 .biggerz {
   font-size: 1.5em;
+}
+
+.maintext {
+  font-size: 1.75rem;
+}
+
+.tops {
+  padding: 7em 4em;
+}
+
+@media (min-width: 576px) {
+  .maintext {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .maintext {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .maintext {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .maintext {
+    font-size: 1.75rem;
+  }
 }
