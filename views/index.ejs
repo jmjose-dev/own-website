@@ -35,13 +35,16 @@
     ></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#togg").hover(function () {
-          $("#navbarSupportedContent").slideDown("slow");
+        $("#togg").mouseenter(function () {
+          $("#navbarSupportedContent").toggle("slow");
         });
         $("#navbarSupportedContent").mouseleave(function () {
           $("#navbarSupportedContent").slideUp("fast", function () {
             $("#navbarSupportedContent").hide();
           });
+        });
+        $("#togg").click(function () {
+          $("#navbarSupportedContent").toggle("slow");
         });
       });
     </script>
