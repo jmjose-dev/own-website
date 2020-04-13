@@ -95,41 +95,38 @@
 .fullbleed {
   margin: 0% auto;
 }
-.spacer {
-  margin: 30%;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .spacer {
-    margin: 30%;
+    margin-top: 30%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .spacer {
-    margin: 30%;
+    margin-top: 30%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .spacer {
-    margin: 10%;
+    margin-top: 10%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .spacer {
-    margin: 5%;
+    margin-top: 5%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .spacer {
-    margin: 5%;
+    margin-top: 5%;
   }
 }
