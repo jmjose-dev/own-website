@@ -104,38 +104,48 @@ html {
 .padtoptext {
   padding-top: 10%;
 }
+.borderlinks {
+  border-radius: 25px;
+  border: solid;
+  margin: 1px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .spacer {
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .spacer {
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .spacer {
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .spacer {
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .spacer {
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }

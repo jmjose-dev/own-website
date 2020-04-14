@@ -5,7 +5,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -29,13 +33,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="public/works.js" type="text/javascript"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(".a").click(function () {
+        $("#navbarSupportedContent").hide();
+      });
+    </script>
   </head>
   <body class="clouds">
     <nav class="navbar navbar-expand-lg bg-light menufont fixed-top">
@@ -48,29 +51,26 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        id="togg"
+        id="btnCollapse"
       >
-        <span class="fas fa-ellipsis-v"> </span>
+        <span><i class="fas fa-bars"></i></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link a" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link a" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#works" id="workslink">Works</a>
+            <a class="nav-link a" href="#works" id="workslink">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link a" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -207,7 +207,34 @@
         </div>
       </div>
     </div>
-
+    <div class="container spacer"></div>
+    <div class="container">
+      <h1 class="text-primary f-questrial col-12" id="contact">
+        Contact Information
+      </h1>
+      <div class="row">
+        <div class="col-12 col-lg-3 text-left text-lg-center btn btn-link">
+          <a href="mailto:janmichael.jose@gmail.com">
+            <i class="far fa-envelope"></i> janmichael.jose@gmail.com</a
+          >
+        </div>
+        <div class="col-12 col-lg-3 text-left text-lg-center btn btn-link">
+          <a href="https://www.linkedin.com/in/janmichaeljose"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <div class="col-12 col-lg-3 text-left text-lg-center btn btn-link">
+          <a href="https://janmichaeljose.wordpress.com/"
+            ><i class="fab fa-wordpress"></i> WordPress</a
+          >
+        </div>
+        <div class="col-12 col-lg-3 text-left text-lg-center btn btn-link">
+          <a href="http://www.facebook.com/thatjanmichael"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
