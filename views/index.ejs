@@ -15,6 +15,8 @@
     />
 
     <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+
     <script
       src="https://kit.fontawesome.com/dedfb313b8.js"
       crossorigin="anonymous"
@@ -33,6 +35,7 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"></script>
   </head>
   <body class="clouds">
     <nav class="navbar navbar-expand-lg bg-light menufont fixed-top">
@@ -61,7 +64,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#works">Works</a>
+            <a class="nav-link" href="#works" id="workslink">Works</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -73,9 +76,11 @@
       </div>
     </nav>
     <div class="row tops clearsky-color fullbleed">
-      <div class="col-12 col-lg-6 text-center text-lg-left">
-        <h1 class="f-questrial">Hi! I am Jan Michael Jose.</h1>
-        <h1 class="f-questrial">I create websites.</h1>
+      <div class="col-12 col-lg-6 text-center text-lg-left" name="intro">
+        <h1 class="f-questrial animated zoomInDown display-4 padtoptext">
+          Hi! I am Jan Michael Jose.
+        </h1>
+        <h1 class="f-questrial animated zoomInDown">I create websites.</h1>
         <br />
         <a href="#about" class="btn btn-outline-light">About Me</a>
       </div>
@@ -85,6 +90,7 @@
     </div>
     <div class="container">
       <div class="row" id="about">
+        <!--About Text-->
         <div class="col-12 col-lg-6">
           <h1 class="f-questrial text-primary">
             About Me
@@ -102,6 +108,7 @@
             Capicola ham hock burgdoggen alcatra.
           </p>
         </div>
+        <!--Technologies-->
         <div class="col-12 col-lg-6">
           <h1 class="f-questrial text-primary">
             Known Technologies
@@ -159,9 +166,12 @@
             ><i class="fab fa-figma"></i> Figma</span
           >
         </div>
+        <span style="margin: 10%;"></span>
       </div>
     </div>
-    <div class="container spacer"></div>
+    <!--End of About and Technologies-->
+    <div class="container spacer padtop"></div>
+
     <div class="container" id="works">
       <h1 class="f-questrial text-primary">
         Works
