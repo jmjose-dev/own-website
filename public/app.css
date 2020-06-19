@@ -61,6 +61,7 @@ html {
   padding: 2%;
   font-size: 100%;
 }
+
 .clouds {
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -92,7 +93,7 @@ html {
 }
 
 .tops {
-  padding: 7em 4em;
+  padding: 7em 4em 0em;
 }
 
 .fullbleed {
