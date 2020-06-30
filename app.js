@@ -6,6 +6,9 @@ app.use(ex.static("public"));
 app.get("/", function (req, res) {
   res.render("index.ejs");
 });
+app.get("/mycv",function (req, res){
+  res.render("cv.ejs");
+});
 app.listen(port, function () {
   console.log("Server is running");
 });
