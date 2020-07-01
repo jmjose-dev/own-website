@@ -17,7 +17,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css" type="text/css" />
     <link rel="stylesheet" href="app.css" type="text/css" />
     <link rel="stylesheet" href="animate.css" type="text/css" />
 
@@ -71,10 +71,10 @@
             <a class="nav-link a" href="#works" id="workslink">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link a" href="/mycv" id="mycvlink">My CV</a>
+            <a class="nav-link a disabled" href="/mycv" id="mycvlink">My CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link a" href="/blog" id="myblog">Blog</a>
+            <a class="nav-link a disabled" href="/blog" id="myblog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link a" href="#contact">Contact</a>
@@ -99,7 +99,7 @@
       </div>
   </div>
   <!--about-->
-    <div class="container">
+    <div class="container my-2 my-md-3">
       <div class="row mt-3 d-flex justify-content-around" id="about">
         <!--About Text-->
         <div class="col-12 col-md-6 p-3 pr-5">
@@ -113,72 +113,46 @@
         <!--Technologies-->
         <div class="col-12 col-md-6 p-4">
           <h1 class="f-questrial text-primary">
-            Known Technologies
+          Known Technologies
           </h1>
           <h5>
-            Comfortable
+          Comfortable
           </h5>
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-html5"></i> HTML</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-css3-alt"></i> CSS</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            >JQuery</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-wordpress"></i> WordPress</span
-          >
-          <br />
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-js-square"></i> JavaScript</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-node-js"></i> Node</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            >Express</span
-          >
-          <br />
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-adobe"></i> Photoshop</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-microsoft"></i> Microsoft Office</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-google-drive"></i> Google Docs</span
-          >
-          <br />
-          <h5>
-            Limited Experience
+          <div class="row text-center h5">
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-html5"></i><br>HTML</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2" ><i class="fab fa-css3-alt"></i><br>CSS</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-jquery"></i><br>JQuery</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-wordpress"></i><br>WordPress</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-js-square"></i><br> JavaScript</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-node-js"></i><br> Node</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-node-js"></i><br> Express</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-adobe"></i> <br>Photoshop</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-microsoft"></i> <br>Microsoft Office</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-google-drive"></i><br> Google Docs</div>
+          </div>
+          <h5 class="my-3">
+          Limited Experience
           </h5>
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-react"></i> ReactJS</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            >MongoDB</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            >MySQL</span
-          >
-          <span class="badge badge-pill badge-dark f-source even-space"
-            ><i class="fab fa-figma"></i> Figma</span
-          >
+          <div class="row text-center h5">
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-react"></i><br>ReactJS</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-python"></i><br>Python</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-mongodb"></i><br>MongoDB</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-mysql"></i><br>MySQL</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-figma"></i><br>Figma</div>
+            <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-git"></i><br>Git</div>
+          </div>
         </div>
-        <span style="margin: 10%;"></span>
       </div>
     </div>
     <!--End of About and Technologies-->
-    <div class="container spacer padtop"></div>
-
-    <div class="container" id="works">
-      <h1 class="f-questrial text-primary">
-        Works
-      </h1>
+    <div class="container my-2 my-md-3" id="works">
       <div class="row">
-        <div class="col-12 col-lg-6 p-4 border border-light rounded">
+        <h1 class="f-questrial text-primary m-3">
+          Works
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5 p-4 border rounded">
           <div class="card p-3">
             <img
               src="images/waxology.png"
@@ -206,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 p-4 border border-light rounded">
+        <div class="col-12 col-md-5 p-4 border rounded">
           <div class="card p-3">
             <img src=""
             />
@@ -224,8 +198,7 @@
         </div>
       </div>
     </div>
-    <div class="container spacer"></div>
-    <div class="container">
+    <div class="container my-2 my-md-3">
       <h1 class="text-primary f-questrial col-12" id="contact">
         Contact Information
       </h1>
@@ -253,8 +226,6 @@
             ><i class="fab fa-facebook"></i> Facebook</a
           >
         </div>
-        <div class="col-md-2"></div>
-
       </div>
     </div>
     <script
