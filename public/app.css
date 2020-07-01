@@ -93,7 +93,7 @@ html {
 }
 
 .tops {
-  padding: 7em 4em 0em;
+  padding: 4em 4em 0em;
 }
 
 .fullbleed {
@@ -110,7 +110,9 @@ html {
   border: solid;
   margin: 1px;
 }
-
+.fresizer {
+  font-size:10vmin;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .spacer {
@@ -125,7 +127,7 @@ html {
     margin-top: 10%;
     margin-bottom: 10%;
   }
-}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
