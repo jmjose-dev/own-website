@@ -33,11 +33,6 @@ html {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
-.jumbotron {
-  width: 100%;
-  height: 100vh;
-  padding: 15% 10%;
-}
 .topper {
   padding: 15%;
 }
@@ -53,14 +48,7 @@ html {
   width: 100%;
   padding-top: 80px;
 }
-#works {
-  height: 100vh;
-  padding-top: 80px;
-}
-.badge {
-  padding: 2%;
-  font-size: 100%;
-}
+
 
 .clouds {
   background: #ece9e6; /* fallback for old browsers */

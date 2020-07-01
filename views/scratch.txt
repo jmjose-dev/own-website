@@ -1,0 +1,99 @@
+ <div class="container my-2 my-md-3">
+      <h1 class="text-primary f-questrial col-12" id="contact">
+        Contact Information
+      </h1>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-12 col-md-4 m-2 py-2 px-5 text-center rounded" style="background-color:white">
+          <a href="mailto:janmichael.jose@gmail.com">
+            <i class="far fa-envelope"></i> janmichael.jose@gmail.com</a
+          >
+        </div>
+        <div class="col-12 col-md-4 m-2 py-2 px-5 text-center rounded" style="background-color:white">
+          <a href="https://www.linkedin.com/in/janmichaeljose"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <div class="col-md-2"></div>
+
+        <div class="col-12 col-md-4 m-2 py-2 px-5 text-center rounded" style="background-color:white">
+          <a href="https://janmichaeljose.wordpress.com/"
+            ><i class="fab fa-wordpress"></i> WordPress</a
+          >
+        </div>
+        <div class="col-12 col-md-4 m-2 py-2 px-5 text-center rounded" style="background-color:white">
+          <a href="http://www.facebook.com/thatjanmichael"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    ==================================================
+    <div class="row">
+      <div class="container my-2 my-md-3 py-2" style="background-color:black;" id="works">
+        <!--Works Text-->
+        <h1 class="f-questrial text-primary">Works</h1>
+        <!--Waxology-->
+        <div class="card-deck" style="background-color:red;">
+          <div class="card p-5">
+            <img
+              src="images/waxology.png"
+              class="card-img-top"
+              alt="Waxology San Antonio, TX"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Waxology San Antonio, TX</h5>
+              <p class="card-text">
+                A brochure-type website of a waxing salon located at San
+                Antonio, TX.
+              </p>
+              <a
+                href="http://www.waxologysa.com"
+                target="_blank"
+                class="btn btn-primary"
+                >See Website</a
+              >
+            </div>
+          </div>
+          <div class="card p-5">
+            <img
+              src="images/waxology.png"
+              class="card-img-top"
+              alt="Waxology San Antonio, TX"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Waxology San Antonio, TX</h5>
+              <p class="card-text">
+                A brochure-type website of a waxing salon located at San
+                Antonio, TX.
+              </p>
+              <a
+                href="http://www.waxologysa.com"
+                target="_blank"
+                class="btn btn-primary"
+                >See Website</a
+              >
+            </div>
+          </div>
+        </div>
+          <!--Sample#2-->
+      </div>
+    </div>
+
+    =========================
+     <div class="container my-2 my-md-3">
+      <h1 class="f-questrial text-primary">
+        Works
+      </h1>
+
+
+
+
+
+
+
+
+
+    </div>
