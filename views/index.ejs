@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css" type="text/css" />
     <link rel="stylesheet" href="app.css" type="text/css" />
     <link rel="stylesheet" href="animate.css" type="text/css" />
-
+    
     <script
       src="https://kit.fontawesome.com/dedfb313b8.js"
       crossorigin="anonymous"
@@ -33,18 +33,43 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
       rel="stylesheet"
     />
-
-    <script type="text/javascript">
-      $(".a").click(function () {
-        $("#navbarSupportedContent").hide();
-      });
-    </script>
     <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <title>Jan Michael Jose | Web Developer.</title>
+    <script type="text/javascript">
+      var $animation_elements = $('.comfy-lang');
+      var $window = $(window);
+      function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+      
+        $.each($animation_elements, function() {
+          var $element = $(this);
+          var element_height = $element.outerHeight();
+          var element_top_position = $element.offset().top;
+          var element_bottom_position = (element_top_position + element_height);
+      
+          //check to see if this current container is within viewport
+          if ((element_bottom_position >= window_top_position) &&
+              (element_top_position <= window_bottom_position)) {
+            $element.addClass('fadeInLeft');
+
+          } else {
+            $element.removeClass('fadeInLeft');
+          }
+        });
+      }
+      $window.on('scroll resize', check_if_in_view);
+      $window.trigger('scroll');
+      $(".a").click(function () {
+        $("#navbarSupportedContent").hide();
+      });
+    </script>
   </head>
   <body class="clouds" data-spy="scroll" data-target="#main-nav" data-offset="70">
     <!--Nav Bar-->
@@ -123,7 +148,7 @@
             <h5>
             Comfortable
             </h5>
-            <div class="row text-center h5">
+            <div class="row text-center h5 animated comfy-lang">
               <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="fab fa-html5"></i><br>HTML</div>
               <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2" ><i class="fab fa-css3-alt"></i><br>CSS</div>
               <div class="col-5 col-lg-3 m-2 p-2 m-md-2 border rounded p-md-2"><i class="icon-jquery"></i><br>JQuery</div>
