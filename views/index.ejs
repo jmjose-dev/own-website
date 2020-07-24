@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="app.css" type="text/css" />
     <!--Animate CSS-->
     <link rel="stylesheet" href="animate.css" type="text/css" />
+    <!--Jquery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--FontAwesome JS-->
     <script
       src="https://kit.fontawesome.com/dedfb313b8.js"
       crossorigin="anonymous" async
     ></script>
+
     <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&display=swap"
@@ -38,6 +41,9 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous" async
   ></script>
+    <script>
+    PDFObject.embed("/janmichaeljose_resume.pdf", "#exampleModalLong");
+    </script>
     <title>Jan Michael Jose | Web Developer.</title>
 
   </head>
@@ -68,10 +74,12 @@
             <a class="nav-link a" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link a" href="#works" id="workslink">Works</a>
+            <a class="nav-link a" href="#works" id="workslink" >Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link a disabled" href="/mycv" id="mycvlink">My CV</a>
+            <a class="nav-link d-none d-lg-block" href="#" id="mycvlink" data-toggle="modal" data-target="#ModalCV">My CV</a>
+            <a class="nav-link d-block d-lg-none" href="/janmichaeljose_resume.pdf" target="_blank">My CV</a>
+
           </li>
           <li class="nav-item">
             <a class="nav-link a disabled" href="/blog" id="myblog">Blog</a>
@@ -157,7 +165,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">Waxology San Antonio, TX</h5>
-                  <h6 class="card-title">Stack: <i class="icon-wordpress h5"></i> <i class="icon-html5 h5"></i> <i class="icon-css3 h5"></i> </h6>
+                  <h6 class="card-title">Stack: <i class="icon-wordpress h5"></i> <i class="fab fa-node-js"></i> <i class="icon-html5 h5"></i> <i class="icon-css3 h5"></i> </h6>
                   <p class="card-text">
                     A brochure-type website of a waxing salon located at San
                     Antonio, TX.
@@ -183,6 +191,27 @@
                   <p class="card-text">
                     A web app that provides text summarization of entered multiple news articles. Uses machine learning algorithms KMeans++ and LSTM to predict and generate summaries. Designed and developed as part of my academic research.
                   </p>
+                </div>
+              </div>
+              <div class="card p-5">
+                <img
+                  src="images/fortune-master.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fortune Master</h5>
+                  <h6 class="card-title">Stack: <i class="icon-html5 h5"></i> <i class="icon-css3 h5"></i> <i class="fab fa-node-js"></i> <i class="icon-mongodb"></i> <i class="icon-bootstrap h5"></i></h6>
+
+                  <p class="card-text">
+                    A web app that provides a random fortune. Fortunes are stored in a document stored on MongoDB.
+                  </p>
+                  <a
+                    href="http://www.fortune-master.herokuapp.com"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >See Website</a
+                  >
                 </div>
               </div>
             </div>
@@ -219,11 +248,30 @@
           </div>
         </div>
       </div>
-    
+      <!-- Modal -->
+      <div class="modal fade" id="ModalCV" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Curriculum Vitae</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <object class="PDFdoc d-none d-lg-block" width="100%" height="800px" type="application/pdf" data="/janmichaeljose_resume.pdf"></object>            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous" async
     ></script>
+
   </body>
 </html>
